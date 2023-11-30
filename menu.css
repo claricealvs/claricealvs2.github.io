@@ -1,0 +1,126 @@
+body {
+    background-color: rgb(225, 183, 238)
+}
+
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Georgia", "Arial";
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px;
+}
+
+p {
+    font-family: "Arial";
+    font-size: 15px;
+    color: #fff;
+}
+
+.p1 {
+    color: black;
+}
+
+body {
+    padding: 10px;
+    margin: 0;
+    font-family: "Arial";
+    color: black;
+}
+
+.ul1 {
+    display: block;
+    list-style: disc;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav {
+    background-color: rgb(106, 28, 126);
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li p a {
+    color: white;
+    text-decoration: none;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.teste {
+    color: #fff;
+}
+
+li {
+    padding: 0 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+.li1:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+}
+
+button:focus~ul {
+    height: 260px;
+}
+
+@media(max-width: 700px) {
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    nav {
+        padding-top: 0px;
+        align-items: flex-start;
+    }
+
+    h1 {
+        margin: 10px;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+}
